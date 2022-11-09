@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my page</title>
+    <style>
+        .above{
+            display: grid;
+            height: 3cm;
+            grid-template-columns: 3cm,1fr;
+            grid-template-rows:3cm;
+            background-color:rgb(61, 61, 60);
+            margin-bottom: 1cm;
+
+        }
+
+        .logohol{
+            display: grid;
+            width: 3cm;
+            height: 3cm;
+            background-color: aqua;
+            grid-row: 1;
+            grid-column: 1;
+        }
+        .titlehol{
+            display: grid;
+            height: 3cm;
+            grid-row: 1;
+            grid-column:2;
+            background-color: rgb(61, 61, 60);
+
+        }
+        .logo{
+            height: 3cm;
+        }
+
+        
+        .heading{
+            color: white;
+            font-size: 60px;
+            text-align:inherit;
+            padding-left: 1cm;
+        }
+
+        .bodyelement{
+            grid-row: auto;
+            grid-column: 2;
+            display: grid;
+            width: 14cm;
+            grid-template-columns: 1fr;
+            grid-template-rows: 14cm,2cm;
+            border:solid;
+            height: 17cm;
+            align-items: center;
+            cursor: pointer;
+            margin-left:0;
+            margin-bottom: 1cm;
+            margin-top: 1cm;
+            
+        }
+
+        .bodyelement:hover{
+            opacity: 0.7;
+        }
+         
+        .bodyimg{
+            display:grid;
+            grid-column: auto;
+            grid-row: 1;
+            width: 14cm;
+            height: 14cm;
+            margin-bottom: 0cm;
+        }
+
+        .bodycont{
+            display: grid;
+            grid-row: 2;
+            grid-column: 2;
+            width:10cm ;
+            font-size:1.5cm;
+            font-weight: bold;
+            height: 1cm;
+            
+            
+        }
+
+        .elementcontainer{
+            display: grid;
+            height: 10cm,10cm,10cm;
+            width: auto;
+            grid-template-columns: auto;
+            grid-template-rows:1fr;
+            padding-left: 1cm;
+        }
+
+        .bar{
+            display: grid;
+            grid-template-columns: 1fr,1fr,1fr,1fr;
+            grid-template-columns: 1;
+            width: auto;
+            height: fit-content;
+            column-gap: 0.2cm;
+            margin-bottom: 1cm;
+            margin-left: 0.5cm;
+            margin-right: 0.5cm;
+        }
+
+        .barbutton1:hover,.barbutton2:hover,.barbutton3:hover,.barbutton4:hover{
+            cursor: pointer;
+            background-color:darkcyan;
+        }
+        
+
+        .barbutton1{
+            display: grid;
+            grid-row: 1;
+            grid-column: 1;
+            color: white;
+            background-color: rgb(114, 114, 83);
+            height: 2cm;
+            width: auto;
+            font-size:xx-large;
+            font-style: oblique;
+            border-radius: 2cm;
+            align-items: center;
+        }
+
+        .barbutton2{
+            display: grid;
+            grid-row: 1;
+            grid-column: 2;
+            color: white;
+            background-color: rgb(114, 114, 83);
+            height: 2cm;
+            width: auto;
+            font-size: xx-large;
+            font-style: oblique;
+            border-radius: 2cm;
+            align-items: center;
+        }
+
+        .barbutton3{
+            display: grid;
+            grid-row: 1;
+            grid-column: 3;
+            color: white;
+            background-color: rgb(114, 114, 83);
+            height: 2cm;
+            width:auto;
+            font-size: xx-large;
+            font-style: oblique;
+            border-radius: 2cm;
+            align-items: center;
+        }
+
+        .barbutton4{
+            display: grid;
+            grid-row: 1;
+            grid-column: 4;
+            color: white;
+            background-color: rgb(114, 114, 83);
+            height: 2cm;
+            width: auto;
+            font-size: xx-large;
+            font-style: oblique;
+            border-radius: 2cm;
+            align-items: center;
+        }
+
+        
+    </style>
+</head>
+<body bgcolor="grey">
+
+    <div class="above">
+        <div class="logohol">
+            <img class="logo"src="logo.png">
+        </div>
+        
+        <div class="titlehol">
+            <h1 class="heading">Codes by prajwal</h1>
+        </div>
+    </div>
+
+    <div class="bar">
+        <button class="barbutton1" onclick="clicked()">about us</button>
+        <button class="barbutton2" onclick="clicked()">contact us</button>
+        <button class="barbutton3" onclick="clicked()">visit our blog</button>
+        <button class="barbutton4" onclick="clicked()"b gxA>queries</button>
+    </div>
+
+    <div class="elementcontainer">
+        <div class="bodyelement" onclick="contclick()">
+        <div>
+            <img class="bodyimg" src="logo.png">
+        </div>
+        <div>
+            <p class="bodycont">
+                python codes
+            </p>
+        </div>
+        </div>
+
+        <div class="bodyelement" onclick="contclick()">
+        <div>
+            <img class="bodyimg" src="logo.png">
+        </div>
+        <div>
+            <p class="bodycont">
+                HTML codes
+            </p>
+        </div>
+        </div>
+
+        <div class="bodyelement" onclick="contclick()">
+        <div>
+            <img class="bodyimg" src="logo.png">
+        </div>
+        <div>
+            <p class="bodycont">
+                CSS codes
+            </p>
+        </div>
+        </div>
+    </div>
+
+    <div class="time">
+        <p>
+            the time is :
+        </p>
+    </div>
+
+    <script>
+        alert("hii")
+        function clicked(){
+            alert("page not linked yet")
+        }
+
+        function contclick(){
+            alert("code yet to be uploaded")
+        }
+    </script>
+
+    
+    
+    
+    
+</body>
+</html>
